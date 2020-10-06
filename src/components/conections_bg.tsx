@@ -16,6 +16,11 @@ export const ConectionsTextWrapper = styled.div`
     display: flex;
     align-items: center;
     padding-right: 30%;
+    @media (max-width: 968px) {
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
 
 
 

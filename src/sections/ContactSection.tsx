@@ -16,7 +16,7 @@ import linkedin from "../components/images/linkedin.png";
 export const ContactSection: React.FC = () => {
   return (
     <>``
-      <Section minHeight={"12vh"} background="acreditamos01">
+      <Section minHeight={"12vh"} background="acreditamos01" fluid={true}>
         <Container>
           <Row>
             <Column desktop={6} tablet={12} mobile={12}>
@@ -43,9 +43,7 @@ export const ContactSection: React.FC = () => {
               <Spacing size={"sm"} />
               <br />
               <Box>
-                <IMG src={instagram} />
-                <HorizontalSpacing size={"sm"} />
-                <IMG src={linkedin} />
+                <a target='_blank' href='https://www.linkedin.com/company/instituto-taqtile/'><IMG src={linkedin} /> </a>
               </Box>
             </Column>
           </Row>

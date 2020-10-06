@@ -6,13 +6,13 @@ import fleury from "../components/images/fleury.png";
 import taqtile from "../components/images/taqtile.png";
 import pence from "../components/images/pence.png";
 import finx from "../components/images/fin-x.png";
-import { H3, H2, P, Quote } from "../components/Tipography";
+import { H3, H2Indigo, P, Quote } from "../components/Tipography";
 import ParticlesBg from "particles-bg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { getUnpackedSettings } from "http2";
- import { LeftArrow } from '../components/arrows'; 
+ import { SliderBox } from '../components/arrows'; 
 
  function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -53,12 +53,12 @@ export const PrevClientsSection: React.FC = () => {
 
   }
   return (
-    <Section minHeight={"10vh"} background={"prev-clients"}>
-      <ParticlesBg type={"cobweb"} num={100} color={"#03d1af"} bg={true} />
+    <Section minHeight={"10vh"} background={"prev-clients"} fluid={true}>
+      <ParticlesBg type={"cobweb"} num={20} color={"#03d1af"} bg={true} />
       <Container>
         <Row align='center' verticalAlign='center'>
           <Column desktop={12} tablet={12} mobile={12} align={"center"}>
-            <H2 type={"secondary"}>Com quem já trabalhamos</H2>
+            <H2Indigo type={"secondary"}>Com quem já trabalhamos</H2Indigo>
             <Spacing size={"sm"} />
           </Column>
           <Column desktop={3} tablet={6} mobile={12} align={"center"}>
@@ -87,11 +87,12 @@ export const PrevClientsSection: React.FC = () => {
         </Row>
         <Spacing size="sm" />
       </Container>
+      <SliderBox>
       <Slider {...settings} >
         <div>
-          <Container >
+          <Container>
             <Row>
-              <Column align='center'>
+              <Column  desktop={10} align='center'>
                 <P>
                 "A Indigo para nós é muito mais que uma parceira! O nível de empatia, compreensão dos conceitos e soluções que eles desenvolvem ultrapassam as expectativas. Amamos trabalhar com eles e todas as interações são ricas em aprendizados, novos olhares e principalmente cocriações lindas!" 
                 </P>
@@ -121,6 +122,7 @@ export const PrevClientsSection: React.FC = () => {
         </div>
       
       </Slider>
+    </SliderBox>
     </Section>
   );
 };

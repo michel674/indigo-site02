@@ -50,7 +50,7 @@ interface TextProps{
     type: string;
     baseline?: boolean;
 }
-export const H2 = styled.h1<TextProps>`
+export const H2 = styled.h2<TextProps>`
     font-family: "Exo 2", sans-serif;
     font-size: 4.5rem;
     margin: 36px 0px; 
@@ -58,8 +58,17 @@ export const H2 = styled.h1<TextProps>`
     color: ${props => getColor(props.type)};
     text-align: center;
 `
+export const H2Indigo = styled.h2<TextProps>`
+    font-family: "Exo 2", sans-serif;
+    font-size: 2.5rem;
+    margin: 36px 0px; 
+    padding: 0;
+    color: ${props => getColor(props.type)};
+    text-align: center;
+`
 
-export const H3 = styled.h1<TextProps>`
+
+export const H3 = styled.h3<TextProps>`
     font-family: "Exo 2", sans-serif;
     font-size: 2rem;
     margin: 16px 0; 
@@ -68,7 +77,7 @@ export const H3 = styled.h1<TextProps>`
     vertical-align: ${props => props.baseline?'super': 'super'};
 `
 
-export const H4 = styled.h1<TextProps>`
+export const H4 = styled.h4<TextProps>`
     font-family: "Exo 2", sans-serif;
     font-size: 2rem;
     margin: 0; 
@@ -77,7 +86,7 @@ export const H4 = styled.h1<TextProps>`
     vertical-align: ${props => props.baseline?'super': 'super'};
 `
 
-export const H5 = styled.h1<TextProps>`
+export const H5 = styled.h5<TextProps>`
     font-family: "Exo 2", sans-serif;
     font-size: 2rem;
     margin: 0; 

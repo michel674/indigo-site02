@@ -109,8 +109,8 @@ interface SectionProps{
 
 export const Section = styled.section<SectionProps>`
     min-height: ${(props: SectionProps)=> props.minHeight?props.minHeight:0};
-    padding: ${(props: SectionProps) => props.fluid ? '0px' : '0.1px 60px'};
     position: relative;
+    width: 100%;
     ${props => props.background?getBackground(props.background): ''};
     @media (max-width: 1060px){
         min-height: 0px;

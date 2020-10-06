@@ -12,7 +12,7 @@ interface PartnersProps {
 
 export const PartnersSection: React.FC<PartnersProps> = (props) => {
   return (
-    <Section background={'partners'}>
+    <Section background={'partners'} fluid={true}>
       <Container>
         <Row align='center'>
           <Column desktop={12}>

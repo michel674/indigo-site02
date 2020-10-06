@@ -13,8 +13,8 @@ const Fade = require("react-reveal/Fade");
 
 export const WeDoSection: React.FC = () => {
   return (
-    <Section>
-      <ParticlesBg type={'cobweb'} num={100} color={"#03d1af"} bg={true} />
+    <Section fluid={true}>
+      <ParticlesBg type={'cobweb'} num={20} color={"#03d1af"} bg={true} />
       <Container>
         <Row align='center' >
           <Column align="center">

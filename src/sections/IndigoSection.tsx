@@ -1,16 +1,16 @@
 import React from "react";
 import { Container, Column, Row } from "../components/Grid";
-import { H2, P } from "../components/Tipography";
+import { H2Indigo, P } from "../components/Tipography";
 import { Section, Spacing } from "../components/Box";
 export const IndigoSection: React.FC = () => {
   return (
-    <Section  background={"indigo"}>
+    <Section  background={"indigo"} fluid={true} >
       <Container>
         <Row align='center'>
-          <Column desktop={8} tablet={8} mobile={12}>
-            <H2 type={"secondary"}>Multidisciplinaridade e integração</H2>
+          <Column desktop={8} tablet={12} mobile={12}>
+            <H2Indigo type={"secondary"}>Multidisciplinaridade e integração</H2Indigo>
           </Column>
-          <Column desktop={8} tablet={8} mobile={12}>
+          <Column desktop={8} tablet={12} mobile={12}>
             <P>
               Unimos várias áreas dentro e fora da saúde. Por isso, nossa equipe contempla uma incrível diversidade de formações, como medicina, nutrição, fisioterapia, educação física, gestão em saúde, engenharia, ciência da computação e design. 
             </P>
