@@ -13,7 +13,7 @@ export const HeroSection: React.FC = (props) => {
       <ParticlesBg type={'cobweb'} num={100} color={"#03d1af"} bg={true} />
       <Container>
         <Spacing size={"sm"} />
-        <Row center={true}>
+        <Row align='center'>
           <Column desktop={8}>
             <IMG src={LogoImage} />
           </Column>
@@ -23,7 +23,7 @@ export const HeroSection: React.FC = (props) => {
 
       <Section minHeight={"85vh"}>
         <Container>
-          <Row center={true} verticalAlign={true}>
+          <Row align='center' verticalAlign='center'>
             <Column desktop={8} tablet={12} mobile={12}>
               <H1>Design, Tecnologia e Inovação a serviço da Saúde</H1>
             </Column>
@@ -31,7 +31,7 @@ export const HeroSection: React.FC = (props) => {
 
           <Spacing size={"sm"} />
 
-          <Row center={true} verticalAlign={true}>
+          <Row align='center' verticalAlign='string'>
             <Column desktop={6} tablet={12} mobile={12}>
               <P>
                 De startups a grandes empresas, ajudamos a criar soluções

@@ -16,7 +16,7 @@ export const Card: React.FC<CardProps> = props =>{
         <Fade>
         <CardBox>
         <Container>
-            <Row center={true} verticalAlign={true}>
+            <Row align='center' verticalAlign='string'>
                 <Column align={'center'} desktop={12} tablet={12} mobile={12}>
                     <IMG src={props.image} minHeight={true}/>
                 </Column>

@@ -56,6 +56,7 @@ export const H2 = styled.h1<TextProps>`
     margin: 36px 0px; 
     padding: 0;
     color: ${props => getColor(props.type)};
+    text-align: center;
 `
 
 export const H3 = styled.h1<TextProps>`
@@ -102,6 +103,20 @@ export const P = styled.p<ParagraphProps>`
     padding: 0;
     vertical-align: middle;
     font-weight: ${props => props.weight? props.weight: 'normal'};
+    ${props => props.card? cardParagraph(props.card): ''};
+
+    & + & {
+        margin-top: 8px;
+    } 
+`
+
+export const Quote = styled.p<ParagraphProps>`
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0; 
+    padding: 0;
+    display: inline;
     ${props => props.card? cardParagraph(props.card): ''};
 
     & + & {

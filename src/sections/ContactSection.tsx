@@ -15,14 +15,14 @@ import linkedin from "../components/images/linkedin.png";
 
 export const ContactSection: React.FC = () => {
   return (
-    <>
+    <>``
       <Section minHeight={"12vh"} background="acreditamos01">
         <Container>
           <Row>
             <Column desktop={6} tablet={12} mobile={12}>
               <H3 type={"secondary"}>Quer trabalhar conosco?</H3>
               <Spacing size={"md"} />
-              <Button>Fale conosco</Button>
+              <a href='mailto: indigo@indigohive.com.br'><Button>Fale conosco</Button></a>
             </Column>
 
             <Column

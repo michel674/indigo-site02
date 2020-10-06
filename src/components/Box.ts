@@ -2,6 +2,7 @@ import styled from  'styled-components';
 import greenSpheres from '../components/images/greenSpheres.png';
 import greenSpheres02 from '../components/images/greenSpheres02.png';
 
+
 const getBackground = (background:string)=>{
     if (background ==='indigo'){
         return`
@@ -36,31 +37,31 @@ const getBackground = (background:string)=>{
 const getSize = (size: string) =>{
     if (size==='sm'){
         return(
-            'margin-bottom: 12px;'
+            'padding-bottom: 12px;'
         )
     }
     if (size==='md'){
         return(
-            'margin-bottom: 50px;'
+            'padding-bottom: 50px;'
         )
     }
     if (size==='lg'){
         return(
-            'margin-bottom: 80px;'
+            'padding-bottom: 80px;'
         )
     }
 
     if (size==='el'){
         return(
-            'margin-bottom: 100px;'
+            'padding-bottom: 100px;'
         )
     }
 
     if (size==='super' ){
         return(`
-            margin-bottom: 400px;
+            padding-bottom: 400px;
             @media (max-width: 1060px){
-                margin-bottom: 0px;
+                padding-bottom: 0px;
             }
             `
             )
@@ -101,13 +102,14 @@ interface SectionProps{
     minHeight?: string;
     section?: string;
     background?: string;
+    fluid?: boolean;
 }
 
 
 
 export const Section = styled.section<SectionProps>`
     min-height: ${(props: SectionProps)=> props.minHeight?props.minHeight:0};
-    padding: 0.1px 60px;
+    padding: ${(props: SectionProps) => props.fluid ? '0px' : '0.1px 60px'};
     position: relative;
     ${props => props.background?getBackground(props.background): ''};
     @media (max-width: 1060px){
@@ -139,4 +141,12 @@ export const Clear = styled.div`
 
 export const CardBox = styled.div`
 
+
+`
+
+export const BriefBox = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 `

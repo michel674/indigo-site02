@@ -14,7 +14,7 @@ export const PartnersSection: React.FC<PartnersProps> = (props) => {
   return (
     <Section background={'partners'}>
       <Container>
-        <Row center={true}>
+        <Row align='center'>
           <Column desktop={12}>
             <H2 type={"secondary"}>Nossos parceiros</H2>
           </Column>

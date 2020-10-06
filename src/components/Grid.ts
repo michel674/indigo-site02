@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 interface ContainerProps {
     paddingNone?: boolean;
+    fluid?: boolean;
 }
 
 export const Container = styled.div<ContainerProps>`
@@ -10,14 +11,16 @@ export const Container = styled.div<ContainerProps>`
     box-sizing: border-box;
     width: 100%;
     padding: ${(props: ContainerProps) => props.paddingNone? ' ':'0 15px 0 15px'};
+    margin: ${(props: ContainerProps) => props.fluid? '0px':''};
+    
     
     
 `;
 
 
 interface RowProps {
-    center?: boolean;
-    verticalAlign?: boolean;
+    align?: string;
+    verticalAlign?: string;
     
 }
 
@@ -26,10 +29,8 @@ export const Row = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
-    justify-content: ${(props: RowProps) => props.center ? 'center' : 'flex-start'};
-    align-items: ${(props: RowProps) => props.verticalAlign ? 'center' : 'flex-start'};
-    
-
+    justify-content: ${(props: RowProps) => props.align ? props.align : 'flex-start'};
+    align-items: ${(props: RowProps) => props.verticalAlign ? props.verticalAlign : 'flex-start'};
 `;
 
 
@@ -54,7 +55,7 @@ interface ColumnProps {
 }
 
 export const Column = styled.div<ColumnProps>`
-    padding: ${(props: ColumnProps)=> props.paddingNone? ' ' : '1rem'};
+    padding: ${(props: ColumnProps)=> props.paddingNone? '0px' : '1rem'};
     min-height: 1px;
     box-sizing: border-box;
     text-align: ${(props: ColumnProps) => props.align ? props.align : 'left'};

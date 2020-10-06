@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media (min-width: 0px){
-    html{s
+    html{
       font-size: 12px;
     }
 

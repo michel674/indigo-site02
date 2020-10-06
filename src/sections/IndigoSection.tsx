@@ -6,20 +6,17 @@ export const IndigoSection: React.FC = () => {
   return (
     <Section  background={"indigo"}>
       <Container>
-        <Row center={true}>
+        <Row align='center'>
           <Column desktop={8} tablet={8} mobile={12}>
-            <H2 type={"secondary"}>IN.DI.GO</H2>
+            <H2 type={"secondary"}>Multidisciplinaridade e integração</H2>
           </Column>
-          <Column desktop={6} tablet={8} mobile={12}>
+          <Column desktop={8} tablet={8} mobile={12}>
             <P>
-              Seja pelas barreiras técnicas específicas da Saúde, seja pelas
-              barreiras de negócios e tecnologia, percebemos que a maioria das
-              ótimas ideias não se tornam ótimos produtos ou soluções. Do
-              encontro de pessoas inquietas que tem como missão de vida impactar
-              a Saúde, nasce a Indigo. Integramos o conhecimento das áreas de
-              Saúde, Tecnologia e Design com Metodologias Ágeis para conceber,
-              expandir e gerir soluções inovadoras e sustentáveis com nossos
-              parceiros.
+              Unimos várias áreas dentro e fora da saúde. Por isso, nossa equipe contempla uma incrível diversidade de formações, como medicina, nutrição, fisioterapia, educação física, gestão em saúde, engenharia, ciência da computação e design. 
+            </P>
+            <Spacing size='md' />
+            <P>
+              Porém, mais que muldisciplinares, somos integrados, contando com profissionais híbridos, treinados para transitar entre conhecimentos técnicos na saúde, skills e estratégias de design e entendimento das possibilidades que tecnologia pode nos trazer.
             </P>
           </Column>
         </Row>
