@@ -15,7 +15,7 @@ import linkedin from "../components/images/linkedin.png";
 
 export const ContactSection: React.FC = () => {
   return (
-    <>``
+    <>
       <Section minHeight={"12vh"} background="acreditamos01" fluid={true}>
         <Container>
           <Row>

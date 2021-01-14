@@ -11,7 +11,6 @@ import ParticlesBg from "particles-bg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { getUnpackedSettings } from "http2";
  import { SliderBox } from '../components/arrows'; 
 
  function SampleNextArrow(props: any) {
